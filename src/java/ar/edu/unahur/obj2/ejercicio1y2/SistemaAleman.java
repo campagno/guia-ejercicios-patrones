@@ -1,6 +1,6 @@
 package ar.edu.unahur.obj2.ejercicio1y2;
 
-public class SistemaAleman extends SistemaDeAmortizacion {
+public class SistemaAleman extends SistemasDeAmortizacion {
 
     public SistemaAleman(Prestamo prestamo) {
         super(prestamo);
@@ -8,9 +8,7 @@ public class SistemaAleman extends SistemaDeAmortizacion {
 
     @Override
     public double capital(Prestamo prestamo) {
-        return prestamo.getCompromiso()*
-                duracion(prestamo)*
-                factorDeRiesgo();
+        return super();
     }
 
     @Override

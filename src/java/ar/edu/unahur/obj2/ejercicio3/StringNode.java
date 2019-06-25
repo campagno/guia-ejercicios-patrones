@@ -1,6 +1,6 @@
 package ar.edu.unahur.obj2.ejercicio3;
 
-public class StringNode  extends Node {
+public class StringNode implements TipoNode {
 
     private String text;
 
@@ -10,5 +10,10 @@ public class StringNode  extends Node {
 
     public String getText() {
         return text;
+    }
+
+    @Override
+    public void ejecute() {
+        this.getText();
     }
 }

@@ -1,6 +1,6 @@
 package ar.edu.unahur.obj2.ejercicio3;
 
-public class LinkTag extends Node {
+public class LinkTag implements TipoNode {
 
     private String label;
 
@@ -10,5 +10,10 @@ public class LinkTag extends Node {
 
     public String getLabel() {
         return label;
+    }
+
+    @Override
+    public void ejecute(){
+        this.getLabel();
     }
 }

@@ -4,13 +4,29 @@ import java.util.List;
 
 public class Parser {
 
-    private List<Node> nodes;
+    private LinkTag linkTag = new LinkTag();
+    private Tag tag = new Tag();
+    private StringNode stringNode = new StringNode();
+    private TipoNode tipoNode = new TipoNode();
 
-    public Parser(List<Node> nodes) {
-        this.nodes = nodes;
+    public Parser(TipoNode tipoNode) {
+        this.tipoNode = tipoNode;
     }
 
-    public List<Node> nodes() {
-        return nodes;
+    public TipoNode getTipoNode() {
+        return tipoNode;
+    }
+
+    private List<TipoNode> tiposnodes;
+
+    public Parser(List<TipoNode> tiposnodes) {
+        this.tiposnodes = tiposnodes;
+    }
+
+    public List<TipoNode> tiposnodes() {
+        return tiposnodes;
+    }
+    public void ejecuteTiponode(){
+        this.getTipoNode().ejecute();
     }
 }

@@ -10,10 +10,10 @@ import static org.testng.Assert.*;
 
 public class TextExtractorTest {
 
-    private Tag tag;
-    private StringNode stringNode;
-    private LinkTag linkTag;
-    private Parser parser;
+    Tag tag;
+    StringNode stringNode;
+    LinkTag linkTag;
+    Parser parser;
 
 
     @BeforeMethod
