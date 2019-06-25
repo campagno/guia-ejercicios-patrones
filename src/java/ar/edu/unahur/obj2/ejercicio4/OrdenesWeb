@@ -1,0 +1,30 @@
+package ar.edu.unahur.obj2.ejercicio4;
+
+public class OrdenesWeb extends ProcesadorDeOrdenes {
+
+    @Override
+    public void procesarOrden(Boolean regalo) {
+        super.procesarOrden(Boolean regalo)
+
+    }
+    @Override
+    protected void seleccionarProducto() {
+        System.out.println("Se agrega el producto al carrito");
+    }
+
+    @Override
+    protected void envolverParaRegalo() {
+        System.out.println("Se envuelve para regalo el producto");
+    }
+
+    @Override
+    protected void pagarProducto() {
+        System.out.println("Se Paga el producto con Transferencia Bancaria o Tarjeta de Credito");
+    }
+
+    @Override
+    protected void entregar() {
+        System.out.println("Se entrega el producto en el domicilio");
+    }
+
+}

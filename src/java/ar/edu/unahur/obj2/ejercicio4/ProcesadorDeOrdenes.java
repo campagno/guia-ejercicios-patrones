@@ -1,6 +1,5 @@
 package ar.edu.unahur.obj2.ejercicio4;
-
-public class ProcesadorDeOrdenes {
+ abstract class ProcesadorDeOrdenes {
 
     public void procesarOrden(boolean regalo) {
         seleccionarProducto();
